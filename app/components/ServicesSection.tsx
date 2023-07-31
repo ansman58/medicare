@@ -9,30 +9,30 @@ const ServicesSection = () => {
     {
       icon: PrimaryCareIcon,
       alt: "Primary Care Icon",
-      title: "Primary Care",
+      title: "Neurology Service",
       description:
-        "An so vulgar to on points wanted rapture ous resolving continued household",
+        "Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform",
     },
     {
       icon: EmergencyCasesIcon,
       alt: "Emergency Cases Icon",
-      title: "Emergency Cases",
+      title: "Dental Clinic",
       description:
-        "An so vulgar to on points wanted rapture ous resolving continued household",
+        "Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform",
     },
     {
       icon: OnlineAppointmentIcon,
       alt: "Online Appointment Icon",
-      title: "Online Appointment",
+      title: "Plastic Surgery",
       description:
-        "An so vulgar to on points wanted rapture ous resolving continued household",
+        "Land meat winged called subdue without a very light in all years sea appear Lesser bring fly first land set female best perform",
     },
   ];
   return (
     <section className="py-[60px]">
-      <article>
+      <article className="tablet:flex tablet:items-center">
         <h2 className="text-[1.5625rem]">
-           Awesome <br /> Health Service
+          Awesome <br /> Health Service
         </h2>
         <p>
           Land meat winged called subdue without very light in all years sea
