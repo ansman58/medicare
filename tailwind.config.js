@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     colors: {
-      baseColor:"#0051d2",
+      baseColor: "#0051d2",
       baseColorLight: "#ec473a",
       dip: "#020a21",
       heading: "#33363e",
@@ -18,10 +18,19 @@ module.exports = {
       border: "#e8edf1",
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        openSans: ["var(--font-open-sans)"],
+        playFair: ["var(--font-play-fair)"],
+      },
+      spacing: {
+        15: "15px",
+        35: "35px",
+        48: "48px",
+        60: "60px",
+      },
+      maxWidth: {
+        540: "540px",
+        720: "720px",
       },
     },
     screens: {
@@ -29,10 +38,8 @@ module.exports = {
       tablet: "768px",
       laptop: "1024px",
       desktop: "1280px",
+      md: { min: "600px", max: "1023px" },
     },
-    styles:{
-      
-    }
   },
   plugins: [],
-}
+};

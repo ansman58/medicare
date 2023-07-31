@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "flex  justify-between relative h-[4rem] px-[15px] py-[10px] items-center tablet:justify-between max-w-[70%] mx-auto"
+        "flex justify-between relative h-[4rem] px-15 py-[10px] items-center tablet:justify-between mx-auto md:max-w-[85%]"
       )}
     >
       <Image
@@ -58,7 +58,7 @@ const Navbar = () => {
               ["rotate-[-45deg] translate-y-[-5px] translate-x-[6px]"]:
                 isMenuOpen,
             },
-            "w-[30px] h-[3px] bg-[red]  m-[6px_0] transition-transform "
+            "w-[30px] h-[3px] m-[6px_0] transition-transform "
           )}
         ></div>
         <div
