@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "flex justify-between relative h-[4rem] px-15 py-[10px] items-center tablet:justify-between mx-auto md:max-w-[85%]"
+        "flex justify-between relative h-[4rem] py-[10px] items-center px-pmobile mobile:px-plaptop tablet:justify-between"
       )}
     >
       <Image
@@ -39,7 +39,7 @@ const Navbar = () => {
       <ul
         className={clsx(
           { ["hidden"]: !isMenuOpen },
-          "absolute top-[4rem] py-[14px] tablet:static tablet:top-0 tablet:flex tablet:items-center tablet:gap-3"
+          "absolute top-[4rem] py-[14px] md:static md:top-0 md:flex md:items-center md:gap-3"
         )}
       >
         {menu.map((item: Menu, index: number) => (
@@ -49,7 +49,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div
-        className="flex flex-col cursor-pointer tablet:hidden"
+        className="flex flex-col cursor-pointer md:hidden"
         onClick={toggleMenu}
       >
         <div
@@ -64,7 +64,7 @@ const Navbar = () => {
         <div
           className={clsx(
             { ["opacity-0"]: isMenuOpen },
-            "w-[30px] h-[3px] bg-[red]  m-[6px_0] transition-transform "
+            "w-[30px] h-[3px] bg-[red] m-[6px_0] transition-transform "
           )}
         ></div>
         <div
@@ -73,7 +73,7 @@ const Navbar = () => {
               ["rotate-[45deg] translate-y-[5px] translate-x-[-6px]"]:
                 isMenuOpen,
             },
-            "w-[30px] h-[3px] bg-[red]  m-[6px_0] transition-transform "
+            "w-[30px] h-[3px] bg-[red] m-[6px_0] transition-transform "
           )}
         ></div>
       </div>

@@ -8,12 +8,12 @@ const AboutArea = () => {
   return (
     <section
       style={{ backgroundImage: `url(${BackImage.src})` }}
-      className="bg-center bg-no-repeat bg-cover pt-[250px] pb-[110px] mt-[-180px] bg-[var(--bg_one)] relative"
+      className="bg-center bg-no-repeat bg-cover pt-[250px] pb-[110px] mt-[-180px] bg-bg_one relative px-pmobile mobile:px-plaptop"
     >
       <Image
         src={TeamImage}
         alt="Team image"
-        className=" w-1/2 absolute bottom-0 left-0 hidden tablet:block"
+        className="absolute bottom-0 left-0 hidden w-1/2 tablet:block"
       />
       <div className="tablet:ml-[54%]">
         <h2 className="text-[36px] mb-[32px] leading-[46px]">

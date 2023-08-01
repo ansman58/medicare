@@ -29,7 +29,7 @@ const ServicesSection = () => {
     },
   ];
   return (
-    <section className="py-[60px]">
+    <section className="py-[60px] px-pmobile mobile:px-plaptop">
       <article className="tablet:flex tablet:items-center">
         <h2 className="text-[1.5625rem]">
           Awesome <br /> Health Service
@@ -40,7 +40,7 @@ const ServicesSection = () => {
           subdue without very light in all years sea appear
         </p>
       </article>
-      <div className="bg-[var(--white)] flex flex-col tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] justify-center">
+      <div className="bg-[var(--white)] flex flex-col gap-[30px]  tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] justify-center">
         {serviceCards.map((card: IServicesCard, index: number) => (
           <ServicesCard
             key={index}

@@ -25,7 +25,7 @@ const DoctorsSection = () => {
     },
   ];
   return (
-    <section className="flex flex-col tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] justify-center py-[60px]">
+    <section className="flex flex-col gap-[30px]  tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] justify-center py-[60px] px-pmobile mobile:px-plaptop">
       {cards.map((card: IDoctorsCard, index: number) => (
         <DoctorsCard
           key={index}

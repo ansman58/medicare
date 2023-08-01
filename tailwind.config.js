@@ -27,6 +27,8 @@ module.exports = {
         35: "35px",
         48: "48px",
         60: "60px",
+        pmobile: "15px",
+        plaptop: "10%",
       },
       maxWidth: {
         540: "540px",
@@ -38,7 +40,7 @@ module.exports = {
       tablet: "768px",
       laptop: "1024px",
       desktop: "1280px",
-      md: { min: "600px", max: "1023px" },
+      md: "900px",
     },
   },
   plugins: [],

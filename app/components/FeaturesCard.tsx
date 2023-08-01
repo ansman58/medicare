@@ -9,7 +9,7 @@ export interface IFeaturesCard {
 }
 const FeaturesCard = (props: IFeaturesCard) => {
   return (
-    <article className="p-[30px_20px] bg-[var(--white)] m-[20px_30px] flex flex-col items-center">
+    <article className="p-[30px_20px] bg-[var(--white)] flex flex-col items-center">
       <Image src={props.icon} height={26} width={26} alt={props.alt} />
       <h2 className="text-[1rem] font-semibold mb-2">{props.title}</h2>
       <p className="text-center">{props.description}</p>

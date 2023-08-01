@@ -29,7 +29,7 @@ const SecondSection = () => {
     },
   ];
   return (
-    <section className="bg-[var(--baseColor)] flex flex-col tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] justify-center py-[60px]">
+    <section className="bg-[var(--baseColor)] gap-[30px] flex flex-col tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] justify-center py-[60px] px-pmobile mobile:px-plaptop">
       {cards.map((card: IFeaturesCard, index: number) => (
         <FeaturesCard
           key={index}

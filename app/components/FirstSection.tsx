@@ -4,10 +4,10 @@ import SectionBackground from "../assets/banner/home-banner.jpg";
 const FirstSection = () => {
   return (
     <section
-      className="bg-center bg-no-repeat bg-cover min-h-[600px] grid w-full"
+      className="bg-center bg-no-repeat bg-cover min-h-[600px] grid w-full px-pmobile mobile:px-plaptop"
       style={{ backgroundImage: `url(${SectionBackground.src})` }}
     >
-      <div className="my-auto max-w-540 px-15 md:max-w-[85%] mr-auto">
+      <div className="my-auto mr-auto max-w-[50%]">
         <h1 className="font-[play-font] text-[26px] mb-[30px] font-[600]">
           Making Health <br /> Care Better Together
         </h1>
