@@ -33,25 +33,35 @@ const Testimonial = () => {
     },
   ];
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      if (currentImgIndex === avatars.length - 1) {
-        setCurrentImgIndex(0);
-      } else if (currentImgIndex === 0) {
-        setCurrentImgIndex(avatars.length - 1);
-      } else {
-        // setCurrentImgIndex(currentImgIndex++);
-      }
-    }, 5000);
-  }, [currentImgIndex]);
+  // React.useEffect(() => {
+  //   const handleNextImage = () => {
+  //     if (currentImgIndex === avatars.length - 1) {
+  //       setCurrentImgIndex(0);
+  //     } else {
+  //       setCurrentImgIndex(currentImgIndex + 1);
+  //     }
+  //   };
+
+  //   const timer = setTimeout(handleNextImage, 5000);
+
+  //   return () => {
+  //     clearTimeout(timer);
+  //   };
+  // }, [currentImgIndex]);
 
   return (
     <div
-      className="bg-center bg-no-repeat bg-cover mt-[-335px] p-[460px_0_95px_0] bg-bg_one relative  px-pmobile mobile:px-plaptop"
+      className="bg-center bg-no-repeat bg-cover mt-[-335px] p-[460px_0_95px_0] bg-bg_one relative  px-pmobile mobile:px-plaptop flex justify-center z-0"
       style={{ backgroundImage: `url(${BackgroundImage.src})` }}
     >
       {avatars.map((avatar: any, index: number) => (
-        <div className={clsx({['hidden']: currentImgIndex !== index}, "flex flex-col items-center")}>
+        <div
+          key={index}
+          className={clsx(
+            { ["hidden"]: currentImgIndex !== index },
+            "flex flex-col items-center max-w-[540px] px-[0.9375rem] laptop:max-w-[800px]"
+          )}
+        >
           <Image
             src={avatar?.img}
             alt="avatar"

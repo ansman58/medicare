@@ -33,7 +33,7 @@ const FAQsSection = () => {
 
   return (
     <section className="px-pmobile mobile:px-plaptop gap-[20px]">
-      <div className="p-[65px_35px] shadow-[3.517px_-8.285px_30px_0px_rgba(12,58,132,0.15)] z-20 md:flex  justify-between">
+      <div className="p-[65px_35px] shadow-[3.517px_-8.285px_30px_0px_rgba(12,58,132,0.15)] md:flex justify-between z-[11] relative bg-white">
         <div className="">
           <h2 className="text-[1.5rem] mb-[35px]">Have Some Questions?</h2>
           {faqs.map((faq: IFAQ, index: number) => (

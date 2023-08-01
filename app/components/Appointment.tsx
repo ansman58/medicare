@@ -41,13 +41,12 @@ const Appointment = () => {
             Message
           </label>
           <textarea
-            name=""
+            defaultValue="Message"
             id="message"
             placeholder="Message"
             className="px-[15px] border-border border-[1px] w-full border-solid resize-none h-[150px]"
-          >
-            Message
-          </textarea>
+          />
+          
         </article>
         <button  className="bg-[var(--baseColor)] px-[10px] text-[var(--white)] font-[400] leading-[48px] border-[var(--baseColor)] border-solid border-[1px] rounded-none font-[PlayFair] mr-[10px] outline-none">Make An Appointment</button>
       </form>
