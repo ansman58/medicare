@@ -29,7 +29,7 @@ const FAQ = (props: IFAQ) => {
       </div>
 
       {showAnswer && (
-        <p className="bg-bg_one leading-[27px] font-[300] p-[1.25rem] mt-[25px]">
+        <p className=" transition-[max-height_0.3_ease] bg-bg_one leading-[27px] font-[300] p-[1.25rem] mt-[25px]">
           {props.answer}
         </p>
       )}
