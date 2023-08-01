@@ -2,6 +2,8 @@
 
 import clsx from "clsx";
 import React from "react";
+import { HiMinus } from "react-icons/hi";
+import { HiPlus } from "react-icons/hi";
 
 export interface IFAQ {
   question: string;
@@ -15,10 +17,15 @@ const FAQ = (props: IFAQ) => {
   };
 
   return (
-    <article className={clsx({["pb-[25px]"]: !showAnswer},"pt-[25px] border-b-[var(--border)] border-b-solid border-b-[1px] cursor-pointer")}>
+    <article
+      className={clsx(
+        { ["pb-[25px]"]: !showAnswer },
+        "pt-[25px] border-b-[var(--border)] border-b-solid border-b-[1px] cursor-pointer max-w-full"
+      )}
+    >
       <div className="flex items-center justify-between" onClick={onShowAnswer}>
         <p>{props.question}</p>
-        <p>{showAnswer ? " &minus;" : "&#x2b;"}</p>
+        {showAnswer ? <HiMinus /> : <HiPlus />}
       </div>
 
       {showAnswer && (

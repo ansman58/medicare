@@ -3,25 +3,26 @@ import PrimaryCareIcon from "../assets/icon/i1.png";
 import EmergencyCasesIcon from "../assets/icon/i2.png";
 import OnlineAppointmentIcon from "../assets/icon/i3.png";
 import FeaturesCard, { IFeaturesCard } from "./FeaturesCard";
+import BackgroundImage from "../assets/banner/pattern_bg.jpg";
+import { TfiHeartBroken } from "react-icons/tfi";
+import { TfiLayers } from "react-icons/tfi";
+import { TfiHeadphoneAlt } from "react-icons/tfi";
 
 const SecondSection = () => {
   const cards = [
     {
-      icon: PrimaryCareIcon,
       alt: "Primary Care Icon",
       title: "Primary Care",
       description:
         "An so vulgar to on points wanted rapture ous resolving continued household",
     },
     {
-      icon: EmergencyCasesIcon,
       alt: "Emergency Cases Icon",
       title: "Emergency Cases",
       description:
         "An so vulgar to on points wanted rapture ous resolving continued household",
     },
     {
-      icon: OnlineAppointmentIcon,
       alt: "Online Appointment Icon",
       title: "Online Appointment",
       description:
@@ -29,11 +30,13 @@ const SecondSection = () => {
     },
   ];
   return (
-    <section className="bg-[var(--baseColor)] gap-[30px] flex flex-col tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] justify-center py-[60px] px-pmobile mobile:px-plaptop">
+    <section
+      className="bg-[var(--baseColor)] gap-[30px] flex flex-col tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] justify-center py-[60px] px-pmobile mobile:px-plaptop bg-center bg-no-repeat bg-cover"
+      style={{ backgroundImage: `url(${BackgroundImage.src})` }}
+    >
       {cards.map((card: IFeaturesCard, index: number) => (
         <FeaturesCard
           key={index}
-          icon={card.icon}
           alt={card.alt}
           title={card.title}
           description={card.description}
