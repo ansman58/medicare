@@ -40,10 +40,10 @@ const Footer = () => {
   };
 
   const socialMedia = [
-    <FaFacebookF />,
-    <FaTwitter />,
-    <FaDribbble />,
-    <FaLinkedinIn />,
+    <FaFacebookF key={'facebook icon'}/>,
+    <FaTwitter key={'twitter icon'}/>,
+    <FaDribbble key={'dribble icon'}/>,
+    <FaLinkedinIn key={'linkedin icon'}/>,
   ];
 
   return (
