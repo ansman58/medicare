@@ -5,6 +5,8 @@ import AboutArea from "./components/AboutArea";
 import DoctorsSection from "./components/DoctorsSection";
 import FAQsSection from "./components/FAQsSection";
 import Testimonial from "./components/Testimonial";
+import Contact from "./components/Contact";
+import BrandsSection from "./components/BrandsSection";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <DoctorsSection />
       <FAQsSection />
       <Testimonial />
+      <Contact />
+      <BrandsSection />
     </main>
   );
 }

@@ -13,7 +13,7 @@ const AboutArea = () => {
       <Image
         src={TeamImage}
         alt="Team image"
-        className="absolute bottom-0 left-0 hidden w-1/2 tablet:block"
+        className="absolute bottom-0 left-0 hidden max-w-[50%] tablet:block"
       />
       <div className="tablet:ml-[54%]">
         <h2 className="text-[36px] mb-[32px] leading-[46px]">

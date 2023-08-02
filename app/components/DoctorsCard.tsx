@@ -21,9 +21,9 @@ const DoctorsCard = (props: IDoctorsCard) => {
       <Image
         src={props.imageSrc}
         alt={props.alt}
-        className="w-full max-w-full"
+        className="w-full max-w-full mb-7"
       />
-      <h2 className="text-[var(--title-color)] text-center ">{props.name}</h2>
+      <h2 className="text-[var(--title-color)] text-center text-[1.25rem] text-titleColor">{props.name}</h2>
       <p className="mb-[26px] text-center">{props.specialty}</p>
       <hr className="h-[1px] w-[80%] mx-auto bg-[var(--border)] mb-[18px]" />
       <address className="flex items-center justify-between w-[80%] mb-4">

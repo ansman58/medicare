@@ -1,10 +1,10 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
 import LearnMoreLink from "./atoms/LearnMoreLink";
 
 export interface IServicesCard {
-  icon: any;
+  icon: StaticImageData;
   alt: string;
   title: string;
   description: string;
