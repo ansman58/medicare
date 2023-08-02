@@ -29,7 +29,7 @@ const DoctorsCard = (props: IDoctorsCard) => {
       <address className="flex items-center justify-between w-[80%] mb-4">
         <Link href="#" className="flex items-center justify-between gap-[14px]">
           <FiSmartphone />
-          <p className="text-sm">+7 235 365 2365</p>
+          <p className="text-sm font-openSans">+7 235 365 2365</p>
         </Link>
         <article className="flex items-center gap-[14px]">
           <SocialIcon icon={<FaFacebookF />} />
