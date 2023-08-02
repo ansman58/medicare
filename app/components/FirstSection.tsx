@@ -14,7 +14,7 @@ const FirstSection = () => {
         <p className="mb-[50px] text-[0.875rem]">
           Also you dry creeping beast multiply fourth abundantly our itsel signs
           bring our. Won form living. Whose dry you seasons divide given
-          gathering great in whose you'll greater let livein form beast sinthete
+          gathering great in whose you will greater let livein form beast sinthete
           better together these place absolute right.
         </p>
 

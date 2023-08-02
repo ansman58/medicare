@@ -76,12 +76,16 @@ const Footer = () => {
 
       <article>
         <p>
-          Copyright ©2023 All rights reserved | This template is made with{" "}
+          Copyright ©2023 All rights reserved | This template is made with
           <FiHeart /> by <Link href={"#"}>Anslem</Link>
         </p>
         <div className="flex items-center gap-[5px]">
           {socialMedia.map((icon, index: number) => (
-            <Link href="#" key={index} className="w-[30px] h-[30px] bg-heading flex justify-center items-center">
+            <Link
+              href="#"
+              key={index}
+              className="w-[30px] h-[30px] bg-heading flex justify-center items-center"
+            >
               {icon}
             </Link>
           ))}
