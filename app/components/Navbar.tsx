@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "sticky top-0 flex justify-between h-[4rem] py-[10px] items-center px-pmobile mobile:px-plaptop tablet:justify-between"
+        "sticky top-0 flex justify-between h-[4rem] py-[10px] items-center px-pmobile tablet:px-plaptop mobile:px-ptablet  tablet:justify-between"
       )}
     >
       <Image

@@ -29,12 +29,12 @@ const ServicesSection = () => {
     },
   ];
   return (
-    <section className="py-[60px] px-pmobile mobile:px-plaptop">
-      <article className="tablet:flex tablet:items-center">
-        <h2 className="text-[1.5625rem]">
+    <section className="py-[60px] px-pmobile tablet:px-plaptop mobile:px-ptablet">
+      <article className="justify-between tablet:flex gap-[1.875rem] mb-[3.125rem]">
+        <h2 className="text-[1.5625rem] mobile:text-[2.25rem] whitespace-nowrap">
           Awesome <br /> Health Service
         </h2>
-        <p>
+        <p className="basis-[65%]">
           Land meat winged called subdue without very light in all years sea
           appear midst forth image him third there set. Land meat winged called
           subdue without very light in all years sea appear

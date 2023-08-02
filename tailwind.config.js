@@ -29,6 +29,7 @@ module.exports = {
         60: "60px",
         pmobile: "15px",
         plaptop: "10%",
+        ptablet: "6%",
       },
       maxWidth: {
         540: "540px",

@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaSkype } from "react-icons/fa";
 import Link from "next/link";
+import SocialIcon from "./atoms/SocialIcon";
 
 export interface IDoctorsCard {
   imageSrc: any;
@@ -31,18 +32,10 @@ const DoctorsCard = (props: IDoctorsCard) => {
           <p className="text-sm">+7 235 365 2365</p>
         </Link>
         <article className="flex items-center gap-[14px]">
-          <Link href="#">
-            <FaFacebookF />
-          </Link>
-          <Link href="#">
-            <FaTwitter />
-          </Link>
-          <Link href="#">
-            <FaInstagram />
-          </Link>
-          <Link href="#">
-            <FaSkype />
-          </Link>
+          <SocialIcon icon={<FaFacebookF />} />
+          <SocialIcon icon={<FaTwitter />} />
+          <SocialIcon icon={<FaInstagram />} />
+          <SocialIcon icon={<FaSkype />} />
         </article>
       </address>
     </div>

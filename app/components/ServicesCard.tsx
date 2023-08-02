@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import LearnMoreLink from "./atoms/LearnMoreLink";
 
 export interface IServicesCard {
   icon: any;
@@ -24,9 +25,7 @@ const ServicesCard = (props: IServicesCard) => {
       <hr className="h-[3px] w-[80%] text-[var(--border)] mb-[20px]" />
       <h2 className="text-[20px] font-semibold mb-2">{props.title}</h2>
       <p className="mb-6 text-center">{props.description}</p>
-      <Link href="#" className="font-[PlayFair]">
-        Learn More
-      </Link>
+      <LearnMoreLink className="capitalize" />
     </article>
   );
 };
