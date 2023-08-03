@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Playfair, Open_Sans } from "next/font/google";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const playfair = Playfair({ subsets: ["latin"], variable: "--font-play-fair" });
 
@@ -26,7 +27,10 @@ export default function RootLayout({
         <header>
           <Navbar />
         </header>
-        {children}
+        <main className="mt-[4rem]">{children}</main>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

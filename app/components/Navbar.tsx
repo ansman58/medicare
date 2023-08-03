@@ -5,6 +5,7 @@ import Logo from "../assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
+import { menu } from "../data/navbar";
 
 type Menu = { title: string; link: string };
 
@@ -15,14 +16,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const menu = [
-    { title: "home", link: "/" },
-    { title: "about", link: "/about" },
-    { title: "department", link: "/department" },
-    { title: "doctors", link: "/doctors" },
-    { title: "blog", link: "/blog" },
-    { title: "contact", link: "/contact" },
-  ];
+
   return (
     <nav
       className={clsx(

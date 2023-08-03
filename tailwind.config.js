@@ -18,6 +18,8 @@ module.exports = {
       border: "#e8edf1",
       faintBorder: "#ededed33",
       dynamicBack: "#1d1d1d",
+      black: "#000",
+      squant: "#666666",
     },
     extend: {
       fontFamily: {

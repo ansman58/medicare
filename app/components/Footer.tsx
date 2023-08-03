@@ -21,7 +21,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="px-pmobile tablet:px-plaptop mobile:px-ptablet">
+    <section className="px-pmobile tablet:px-plaptop mobile:px-ptablet">
       <div className="grid grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))] mb-[60px]">
         <FooterLinks
           options={topProductsLinks.options}
@@ -67,7 +67,7 @@ const Footer = () => {
           ))}
         </div>
       </article>
-    </footer>
+    </section>
   );
 };
 
