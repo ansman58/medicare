@@ -46,12 +46,12 @@ const Appointment = () => {
             placeholder="Message"
             className="px-[15px] border-border border-[1px] w-full border-solid resize-none h-[150px]"
           />
-          
         </article>
-        <button  className="bg-[var(--baseColor)] px-[10px] text-[var(--white)] font-[400] leading-[48px] border-[var(--baseColor)] border-solid border-[1px] rounded-none font-[PlayFair] mr-[10px] outline-none">Make An Appointment</button>
+        <button className="bg-[var(--baseColor)] px-[10px] text-[var(--white)] font-[400] leading-[48px] border-[var(--baseColor)] border-solid border-[1px] rounded-none font-[PlayFair] mr-[10px] outline-none">
+          Make An Appointment
+        </button>
       </form>
     </div>
   );
 };
-// cols="30" rows="10"
 export default Appointment;

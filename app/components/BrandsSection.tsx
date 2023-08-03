@@ -10,7 +10,7 @@ const BrandsSection = () => {
   const brands = [Brand1, Brand2, Brand3, Brand4, Brand5];
 
   return (
-    <section className="flex items-center justify-center gap-[1.875rem] relative py-[5rem] bg-pfont mt-[5rem]">
+    <section className="flex items-center justify-center gap-[1.875rem] relative py-[5rem] bg-bg_one mt-[5rem] overflow-x-auto">
       {brands.map((brand, index) => (
         <Image
           key={index}

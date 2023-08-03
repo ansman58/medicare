@@ -12,7 +12,7 @@ const FooterLinks = (props: IFooterLinks) => {
       <ul>
         {props.options.map((option: string, index: number) => (
           <li key={index} className="mb-2 list-none">
-            <Link href="#">{option}</Link>
+            <Link href="#" className="hover:text-baseColor">{option}</Link>
           </li>
         ))}
       </ul>

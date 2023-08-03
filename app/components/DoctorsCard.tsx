@@ -32,10 +32,10 @@ const DoctorsCard = (props: IDoctorsCard) => {
           <p className="text-sm font-openSans">+7 235 365 2365</p>
         </Link>
         <article className="flex items-center gap-[14px]">
-          <SocialIcon icon={<FaFacebookF />} />
-          <SocialIcon icon={<FaTwitter />} />
-          <SocialIcon icon={<FaInstagram />} />
-          <SocialIcon icon={<FaSkype />} />
+          <SocialIcon icon={<FaFacebookF className="hover:text-baseColor"/>} />
+          <SocialIcon icon={<FaTwitter className="hover:text-baseColor"/>} />
+          <SocialIcon icon={<FaInstagram className="hover:text-baseColor"/>} />
+          <SocialIcon icon={<FaSkype className="hover:text-baseColor"/>} />
         </article>
       </address>
     </div>
