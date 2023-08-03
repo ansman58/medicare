@@ -16,6 +16,8 @@ module.exports = {
       bg_one: "#f7f7f7",
       titleColor: "#2a2a2a",
       border: "#e8edf1",
+      faintBorder: "#ededed33",
+      dynamicBack: "#1d1d1d",
     },
     extend: {
       fontFamily: {

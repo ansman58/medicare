@@ -31,7 +31,7 @@ const Footer = () => {
         <FooterLinks options={features.options} title={features.title} />
         <FooterLinks options={resources.options} title={resources.title} />
         <article>
-          <FooterLinks options={newsletter.options} title={resources.title} />
+          <FooterLinks options={newsletter.options} title={newsletter.title} />
           <div className="flex ">
             <input
               type="email"
@@ -46,8 +46,8 @@ const Footer = () => {
       </div>
 
       <article className="border-solid border-y-border border-t-[1px] py-[1.875rem] flex flex-col md:flex-row md:justify-between items-center gap-[1.875rem] ">
-        <p className="">
-          Copyright @{currentYear} All rights reserved | This template is made
+        <p className="text-center">
+          Copyright @{currentYear} All rights reserved | Built
           with
           {" "}<FcLike className="inline align-middle" /> by{" "}
           <Link className="inline-block" href={"#"}>

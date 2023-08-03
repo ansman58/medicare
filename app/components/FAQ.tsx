@@ -24,8 +24,8 @@ const FAQ = (props: IFAQ) => {
       )}
     >
       <div className="flex items-center justify-between" onClick={onShowAnswer}>
-        <p>{props.question}</p>
-        {showAnswer ? <HiMinus /> : <HiPlus />}
+        <p className="text-dynamicBack">{props.question}</p>
+        {showAnswer ? <HiMinus className="hidden mobile:block"/> : <HiPlus className="hidden mobile:block"/>}
       </div>
 
       {showAnswer && (

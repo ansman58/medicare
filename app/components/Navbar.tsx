@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "sticky top-0 flex justify-between h-[4rem] py-[10px] items-center px-pmobile tablet:px-plaptop mobile:px-ptablet  tablet:justify-between"
+        "fixed top-0 z-50 bg-white w-full flex justify-between h-[4rem] py-[10px] items-center px-pmobile tablet:px-plaptop mobile:px-ptablet  tablet:justify-between"
       )}
     >
       <Image
@@ -39,12 +39,17 @@ const Navbar = () => {
       <ul
         className={clsx(
           { ["hidden"]: !isMenuOpen },
-          "absolute top-[4rem] py-[14px] md:static md:top-0 md:flex md:items-center md:gap-3"
+          "absolute bg-white left-0 right-0 top-[4rem] px-pmobile tablet:px-plaptop py-[14px] md:static md:top-0  md:flex md:items-center md:gap-3 z-40"
         )}
       >
         {menu.map((item: Menu, index: number) => (
-          <li key={index} className="uppercase text-[14px] py-2">
-            <Link href={item.link}>{item.title}</Link>
+          <li
+            key={index}
+            className="uppercase text-[14px] py-2 text-heading border-b-[1px] border-solid border-faintBorder md:border-b-0 md:py-0"
+          >
+            <Link href={item.link} className="hover:text-baseColor">
+              {item.title}
+            </Link>
           </li>
         ))}
       </ul>
@@ -55,22 +60,24 @@ const Navbar = () => {
         <div
           className={clsx(
             {
-              ["rotate-[-45deg] translate-y-[-5px] translate-x-[6px]"]:
-                isMenuOpen,
+              // ["rotate-[45deg] translate-y-[8px]"]: isMenuOpen,
+              ["hidden"]: isMenuOpen,
             },
             "w-[30px] h-[3px] m-[6px_0] transition-transform "
           )}
         ></div>
         <div
           className={clsx(
-            { ["opacity-0"]: isMenuOpen },
+            // { ["opacity-0"]: isMenuOpen },
+            { ["rotate-[-45deg] origin-top"]: isMenuOpen },
             "w-[30px] h-[3px] bg-[red] m-[6px_0] transition-transform "
           )}
         ></div>
         <div
           className={clsx(
             {
-              ["rotate-[45deg] translate-y-[5px] translate-x-[-6px]"]:
+              // ["rotate-[-45deg] translate-y-[-8px]"]: isMenuOpen,
+              ["rotate-[45deg] origin-bottom translate-y-[30px] translate-x-[-11px]"]:
                 isMenuOpen,
             },
             "w-[30px] h-[3px] bg-[red] m-[6px_0] transition-transform "
