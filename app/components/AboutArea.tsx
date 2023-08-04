@@ -12,14 +12,20 @@ const AboutArea = (props: IAboutArea) => {
   return (
     <section
       style={{ backgroundImage: `url(${BackImage.src})` }}
-      className={clsx(props.className, "laptop:flex laptop:justify-center bg-center bg-no-repeat bg-cover pt-[250px] pb-[110px] mt-[-180px] bg-bg_one relative px-pmobile tablet:px-plaptop mobile:px-ptablet")}
+      className={clsx(
+        props.className,
+        " laptop:gap-[40px] laptop:flex laptop:justify-center bg-center bg-no-repeat bg-cover pt-[250px] pb-[110px] mt-[-180px] bg-bg_one relative px-pmobile tablet:px-plaptop mobile:px-ptablet"
+      )}
     >
-      <Image
-        src={TeamImage}
-        alt="Team image"
-        className=" bottom-0 left-0 hidden max-w-[50%] tablet:block tablet:max-w-[60%] tablet:static mb-[1.875rem] laptop:ml-[0%] laptop:mb-[0]"
-      />
-      <div className="laptop:ml-[54%] tablet:ml-0">
+      <div>
+        <Image
+          src={TeamImage}
+          alt="Team image"
+          className="desktop:absolute desktop:bottom-0 object-cover desktop:max-w-[48%] desktop:left-0 hidden tablet:block w-[100%] tablet:static mb-[1.875rem] desktop:mb-0 "
+        />
+      </div>
+
+      <div className="desktop:relative desktop:mr-0 desktop:ml-[50%]">
         <h2 className="text-[36px] mb-[32px] leading-[46px]">
           Second Abundantly Move That Cattle <br /> Perform Appen Land
         </h2>
