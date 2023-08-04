@@ -37,7 +37,7 @@ const ServicesSection = () => {
           appear midst forth image him third there set. Land meat winged called
           subdue without very light in all years sea appear"
       />
-      <div className="bg-[var(--white)] flex flex-col gap-[30px]  tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(304px,_1fr))] justify-center">
+      <div className="bg-[var(--white)] flex flex-col gap-[30px]  tablet:grid tablet:grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))] justify-center">
         {serviceCards.map((card: IServicesCard, index: number) => (
           <ServicesCard
             key={index}

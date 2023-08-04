@@ -4,7 +4,7 @@ import SectionBackground from "../assets/banner/home-banner.jpg";
 const FirstSection = () => {
   return (
     <section
-      className="bg-center bg-no-repeat bg-cover min-h-[100vh] grid w-full px-pmobile tablet:px-plaptop mobile:px-ptablet"
+      className="bg-center bg-no-repeat bg-cover min-h-[50rem] grid w-full px-pmobile tablet:px-plaptop mobile:px-ptablet"
       style={{ backgroundImage: `url(${SectionBackground.src})` }}
     >
       <div className="my-auto mr-auto tablet:max-w-[70%] laptop:max-w-[50%]">

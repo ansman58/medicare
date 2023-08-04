@@ -13,7 +13,7 @@ const AboutPage = () => {
         description="Belding years moveth earth green behold wherein"
         pageLink="About Us"
       />
-      <AboutArea />
+      <AboutArea className="mt-0"/>
       <FAQsSection />
       <Testimonial />
       <BrandsSection />

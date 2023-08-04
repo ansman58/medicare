@@ -31,7 +31,7 @@ const SecondSection = () => {
   ];
   return (
     <section
-      className="bg-[var(--baseColor)] gap-[30px] flex flex-col tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(290px,_1fr))] justify-center py-[60px] px-pmobile tablet:px-plaptop mobile:px-ptablet bg-center bg-no-repeat bg-cover"
+      className="bg-[var(--baseColor)] gap-[30px] flex flex-col tablet:grid tablet:grid-cols-[repeat(auto-fit,_minmax(290px,_1fr))] justify-center py-[60px] px-pmobile tablet:px-plaptop mobile:px-ptablet bg-center bg-no-repeat bg-cover"
       style={{ backgroundImage: `url(${BackgroundImage.src})` }}
     >
       {cards.map((card: IFeaturesCard, index: number) => (

@@ -34,7 +34,7 @@ const DoctorsSection = () => {
           subdue without very light in all years sea appear"
       />
 
-      <div className="flex flex-col gap-[30px] tablet:grid tablet:grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))] justify-center">
+      <div className="flex flex-col gap-[30px] tablet:grid tablet:grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))] justify-center">
         {cards.map((card: IDoctorsCard, index: number) => (
           <DoctorsCard
             key={index}

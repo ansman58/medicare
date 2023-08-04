@@ -3,12 +3,16 @@ import BackImage from "../assets/background/bg_1.png";
 import TeamImage from "../assets/banner/about1.png";
 import Image from "next/image";
 import LearnMoreLink from "./atoms/LearnMoreLink";
+import clsx from "clsx";
 
-const AboutArea = () => {
+interface IAboutArea {
+  className?: string;
+}
+const AboutArea = (props: IAboutArea) => {
   return (
     <section
       style={{ backgroundImage: `url(${BackImage.src})` }}
-      className="bg-center bg-no-repeat bg-cover pt-[250px] pb-[110px] mt-[-180px] bg-bg_one relative px-pmobile tablet:px-plaptop mobile:px-ptablet"
+      className={clsx(props.className, "bg-center bg-no-repeat bg-cover pt-[250px] pb-[110px] mt-[-180px] bg-bg_one relative px-pmobile tablet:px-plaptop mobile:px-ptablet")}
     >
       <Image
         src={TeamImage}
