@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import { menu } from "../data/navbar";
+import { HiMenu } from "react-icons/hi";
+import { HiOutlineX } from "react-icons/hi";
 
 type Menu = { title: string; link: string };
 
@@ -15,7 +17,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
 
   return (
     <nav
@@ -28,7 +29,7 @@ const Navbar = () => {
         alt="logo"
         height={43}
         width={178}
-        className="max-w-full"
+        className="max-w-full scale-[0.8]"
       />
       <ul
         className={clsx(
@@ -47,37 +48,14 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div
-        className="flex flex-col cursor-pointer md:hidden"
-        onClick={toggleMenu}
-      >
-        <div
-          className={clsx(
-            {
-              // ["rotate-[45deg] translate-y-[8px]"]: isMenuOpen,
-              ["hidden"]: isMenuOpen,
-            },
-            "w-[30px] h-[3px] m-[6px_0] transition-transform "
-          )}
-        ></div>
-        <div
-          className={clsx(
-            // { ["opacity-0"]: isMenuOpen },
-            { ["rotate-[-45deg] origin-top"]: isMenuOpen },
-            "w-[30px] h-[3px] bg-[red] m-[6px_0] transition-transform "
-          )}
-        ></div>
-        <div
-          className={clsx(
-            {
-              // ["rotate-[-45deg] translate-y-[-8px]"]: isMenuOpen,
-              ["rotate-[45deg] origin-bottom translate-y-[30px] translate-x-[-11px]"]:
-                isMenuOpen,
-            },
-            "w-[30px] h-[3px] bg-[red] m-[6px_0] transition-transform "
-          )}
-        ></div>
-      </div>
+      <button onClick={toggleMenu}>
+        <HiMenu
+          className={clsx({ ["hidden"]: isMenuOpen }, "text-baseColor text-[30px]")}
+        />
+        <HiOutlineX
+          className={clsx({ ["hidden"]: !isMenuOpen }, "text-baseColor text-[30px]")}
+        />
+      </button>
     </nav>
   );
 };
