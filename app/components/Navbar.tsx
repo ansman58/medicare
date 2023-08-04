@@ -48,7 +48,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <button onClick={toggleMenu}>
+      <button onClick={toggleMenu} className="md:hidden">
         <HiMenu
           className={clsx({ ["hidden"]: isMenuOpen }, "text-baseColor text-[30px]")}
         />
