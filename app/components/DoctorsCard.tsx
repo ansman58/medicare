@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { FiSmartphone } from "react-icons/fi";
@@ -8,6 +10,7 @@ import { FaSkype } from "react-icons/fa";
 import Link from "next/link";
 import SocialIcon from "./atoms/SocialIcon";
 import clsx from "clsx";
+import { motion } from "framer-motion";
 
 export interface IDoctorsCard {
   imageSrc: any;
@@ -19,7 +22,11 @@ export interface IDoctorsCard {
 
 const DoctorsCard = (props: IDoctorsCard) => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      transition={{ duration: 0.5, delay: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
       className={clsx(
         props.className,
         "border-[1px] border-solid border-[var(--border)] flex flex-col items-center"
@@ -47,7 +54,7 @@ const DoctorsCard = (props: IDoctorsCard) => {
           <SocialIcon icon={<FaSkype className="hover:text-baseColor" />} />
         </article>
       </address>
-    </div>
+    </motion.div>
   );
 };
 
