@@ -7,10 +7,10 @@ import Brand5 from "../assets/brand/5.png";
 import Image from "next/image";
 
 const BrandsSection = () => {
-  const brands = [Brand1, Brand2, Brand3, Brand4, Brand5];
+  const brands = [Brand1, Brand2, Brand3, Brand4, Brand5, ];
 
   return (
-    <section className="flex items-center justify-center gap-[1.875rem] relative py-[5rem] bg-bg_one mt-[5rem] overflow-x-auto">
+    <section className="flex items-center justify-center gap-[1.875rem] relative py-[5rem] bg-bg_one mt-[5rem] overflow-x-hidden">
       {brands.map((brand, index) => (
         <Image
           key={index}
@@ -18,7 +18,7 @@ const BrandsSection = () => {
           alt="brand"
           width={145}
           height={32}
-          className=""
+          className="animate-slide tablet:animate-none "
         />
       ))}
     </section>

@@ -38,7 +38,16 @@ module.exports = {
       maxWidth: {
         540: "540px",
         720: "720px",
-        maxWidth: "1720px"
+        maxWidth: "1720px",
+      },
+      animation: {
+        slide: "slide 10s linear infinite",
+      },
+      keyframes: {
+        slide: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
     },
     screens: {

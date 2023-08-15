@@ -1,3 +1,5 @@
+"use client";
+
 import FirstSection from "./components/FirstSection";
 import SecondSection from "./components/SecondSection";
 import ServicesSection from "./components/ServicesSection";
