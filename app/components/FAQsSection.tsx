@@ -1,35 +1,10 @@
 import React from "react";
 import FAQ, { IFAQ } from "./FAQ";
 import Appointment from "./Appointment";
+import { faqs } from "../data/FAQs";
 
 const FAQsSection = () => {
-  const faqs = [
-    {
-      question: "God male gathering them it female which green cattle?",
-      answer:
-        "Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.",
-    },
-    {
-      question: "God male gathering them it female which green cattle?",
-      answer:
-        "Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.",
-    },
-    {
-      question: "God male gathering them it female which green cattle?",
-      answer:
-        "Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.",
-    },
-    {
-      question: "God male gathering them it female which green cattle?",
-      answer:
-        "Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.",
-    },
-    {
-      question: "God male gathering them it female which green cattle?",
-      answer:
-        "Great day without sixth a lesser beginning. Their thing abundantly air moving saw fruitful lesser god. Sea abundantly blessed life set. Land. Lights divided man in deep in open upon.",
-    },
-  ];
+
 
   return (
     <section className="px-pmobile mobile:px-plaptop gap-[20px]">

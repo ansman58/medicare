@@ -1,14 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Playfair, Open_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter } from "next/font/google"; // Modern fonts
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const playfair = Playfair({ subsets: ["latin"], variable: "--font-play-fair" });
-
-const openSans = Open_Sans({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-open-sans",
+  variable: "--font-title",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} ${playfair.variable} relative`}>
+      <body
+        className={`${inter.variable} ${plusJakartaSans.variable} relative font-body text-pfont`}
+      >
         <header>
           <Navbar />
         </header>

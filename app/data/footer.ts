@@ -1,29 +1,29 @@
 export const topProductsLinks = {
-  title: "Top Products",
+  title: "Departments",
   options: [
-    "Managed Website",
-    "Manage Reputation",
-    "Power Tools",
-    "Marketing Service",
+    "Cardiology",
+    "Neurology",
+    "Pediatrics",
+    "Surgery",
   ],
 };
 
 export const quickLinks = {
   title: "Quick Links",
-  options: ["Jobs", "Brand Assets", "Investor Relations", "Terms of Service"],
+  options: ["About Us", "Contact Us", "Doctors", "FAQ"],
 };
 
 export const features = {
-  title: "Features",
-  options: ["Jobs", "Brand Assets", "Investor Relations", "Terms of Service"],
+  title: "Patients",
+  options: ["Portal Login", "Appointments", "Insurance", "Bill Pay"],
 };
 
 export const resources = {
   title: "Resources",
-  options: ["Guides", "Research", "Experts", "Agencies"],
+  options: ["Health Blog", "Events", "COVID-19 Info", "Emergency"],
 };
 
 export const newsletter = {
   title: "Newsletter",
-  options: ["You can trust us. we only send promo offers"],
+  options: ["Stay updated with our latest health news and tips."],
 };

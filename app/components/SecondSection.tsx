@@ -14,19 +14,19 @@ const SecondSection = () => {
       alt: "Primary Care Icon",
       title: "Primary Care",
       description:
-        "An so vulgar to on points wanted rapture ous resolving continued household",
+        "Comprehensive health services for your everyday needs, from check-ups to chronic disease management.",
     },
     {
       alt: "Emergency Cases Icon",
       title: "Emergency Cases",
       description:
-        "An so vulgar to on points wanted rapture ous resolving continued household",
+        "24/7 emergency support with a dedicated team ready to handle critical situations with speed and care.",
     },
     {
       alt: "Online Appointment Icon",
       title: "Online Appointment",
       description:
-        "An so vulgar to on points wanted rapture ous resolving continued household",
+        "Conveniently book your appointments online and access telehealth services from the comfort of your home.",
     },
   ];
   return (

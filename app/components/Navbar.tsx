@@ -8,11 +8,13 @@ import clsx from "clsx";
 import { menu } from "../data/navbar";
 import { HiMenu } from "react-icons/hi";
 import { HiOutlineX } from "react-icons/hi";
+import { usePathname } from "next/navigation";
 
 type Menu = { title: string; link: string };
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,7 +23,7 @@ const Navbar = () => {
   return (
     <nav
       className={clsx(
-        "fixed top-0 z-50 bg-white w-full flex justify-between h-[4rem] py-[10px] items-center px-pmobile tablet:px-plaptop mobile:px-ptablet  tablet:justify-between"
+        "fixed top-0 z-50 bg-white/80 backdrop-blur-md w-full flex justify-between h-[4rem] py-[10px] items-center px-pmobile tablet:px-plaptop mobile:px-ptablet  tablet:justify-between border-b border-border transition-all duration-300 shadow-sm"
       )}
     >
       <Image
@@ -42,7 +44,16 @@ const Navbar = () => {
             key={index}
             className="uppercase text-[14px] py-2 text-heading border-b-[1px] border-solid border-faintBorder md:border-b-0 md:py-0"
           >
-            <Link href={item.link} className="hover:text-baseColor">
+            <Link
+              href={item.link}
+              className={clsx(
+                "hover:text-baseColor transition-colors",
+                {
+                  "text-baseColor font-bold": pathname === item.link,
+                  "text-heading": pathname !== item.link,
+                }
+              )}
+            >
               {item.title}
             </Link>
           </li>

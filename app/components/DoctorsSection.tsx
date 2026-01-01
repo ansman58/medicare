@@ -9,20 +9,20 @@ const DoctorsSection = () => {
   const cards = [
     {
       imageSrc: Doctor1,
-      alt: "Dr. John Doe's Image",
-      name: "Dr. John Doe",
+      alt: "Dr. Sarah Smith's Image",
+      name: "Dr. Sarah Smith",
       specialty: "Cardiologist",
     },
     {
       imageSrc: Doctor2,
-      alt: "Dr Blian Judge's Image",
-      name: "Dr Blian Judge",
-      specialty: "Paediatrician",
+      alt: "Dr. Brian Jones's Image",
+      name: "Dr. Brian Jones",
+      specialty: "Pediatrician",
     },
     {
       imageSrc: Doctor3,
-      alt: "Dr John Doe's Image",
-      name: "Dr John Doe",
+      alt: "Dr. Michael Brown's Image",
+      name: "Dr. Michael Brown",
       specialty: "Neurologist",
     },
   ];
@@ -30,10 +30,8 @@ const DoctorsSection = () => {
   return (
     <section className="   py-[60px] px-pmobile tablet:px-plaptop mobile:px-ptablet">
       <SectionHeaderTemplate
-        title="Medcare Experience Doctors"
-        description="Land meat winged called subdue without very light in all years sea
-          appear midst forth image him third there set. Land meat winged called
-          subdue without very light in all years sea appear"
+        title="Medicare Experienced Doctors"
+        description="Our team of specialized doctors are leaders in their fields, dedicated to providing you with the highest standard of medical care."
       />
 
       <div
@@ -48,10 +46,10 @@ const DoctorsSection = () => {
             alt={card.alt}
             name={card.name}
             specialty={card.specialty}
-            // className={clsx({
-            //   [`opacity-100 translate-x-[0%] transition-transform duration-1000 ease-in-out`]: isVisible,
-            //   ["opacity-0 translate-x-[100%]"]: !isVisible,
-            // })}
+          // className={clsx({
+          //   [`opacity-100 translate-x-[0%] transition-transform duration-1000 ease-in-out`]: isVisible,
+          //   ["opacity-0 translate-x-[100%]"]: !isVisible,
+          // })}
           />
         ))}
       </div>
